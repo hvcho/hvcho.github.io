@@ -103,26 +103,25 @@
             </tr>
 
 
-            <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-              <tr onmouseout="charm_stop()" onmouseover="charm_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle;">
-                  <div class="one">
-                    <div class="two" id='charm_image'><video  width=120% muted autoplay loop>
-                    <source src="image/charm.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video></div>
-                    <img src='image/charm.png' width=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function charm_start() {
-                      document.getElementById('charm_image').style.opacity = "1";
-                    }
-                    function charm_stop() {
-                      document.getElementById('charm_image').style.opacity = "0";
-                    }
-                    charm_stop()
-                  </script>
-                </td>
+            <tr onmouseout="charm_stop()" onmouseover="charm_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='charm_image'><video  width=100% muted autoplay loop>
+                  <source src="image/charm.png" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='image/charm.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function charm_start() {
+                    document.getElementById('charm_image').style.opacity = "1";
+                  }
+                  function charm_stop() {
+                    document.getElementById('charm_image').style.opacity = "0";
+                  }
+                  charm_stop()
+                </script>
+              </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <a href="https://charm.stanford.edu/Main/HomePage">
                     <span class="papertitle">Collaborative Haptics and Robotics in Medicine Lab</span>
@@ -135,13 +134,12 @@
                   <a href="datas/charm_Report.pdf">Report Slides</a>
                   <p></p>
                   <p>
-  
-  
-                    - Focused on creating a robotic system capable of performing critical tasks that require touch-based diagnosis, such as applying pressure and stabilizing limbs.
+                    -Vine robots can navigate tight spaces and complex environments by extending their flexible, tube-like bodies.
                   </p><p>
-                    - Implemented a compliance controller for maintaining contact with dynamic objects and a diagnosis mode to palpate patients and record stiffness data, using the Kinova Gen 3 robot arm equipped with Bota SensOne force sensor and Haply Inverse-3 haptic device.
+                    - Developed a base station capable of maintaining up to 15 PSI to facilitate the robot's extension. 
+                    Also, engineered new sealing methods with gaskets and thread sealants to ensure an air-tight system.
                   </p><p>
-                    - Demonstrated the system's ability to maintain consistent contact force, detect varying stiffness levels, and provide accurate haptic feedback. This includes adapting to patient movements without causing harm and enabling detailed tissue stiffness assessment, crucial for detecting abnormalities like tumors.
+                    - Redesigned clamping and closure systems to accommodate various diameters, simplifying operations.
                   </p>
                 </td>
               </tr>
