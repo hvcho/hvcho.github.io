@@ -347,6 +347,43 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <tr onmouseout="noirv2_stop()" onmouseover="noirv2_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                <div class="one">
+                  <div class="two" id='noirv2_image'><video  width=100% muted autoplay loop>
+                  <source src="image/noirv2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='image/noirv2.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function noirv2_start() {
+                    document.getElementById('noirv2_image').style.opacity = "1";
+                  }
+        
+                  function noirv2_stop() {
+                    document.getElementById('noirv2_image').style.opacity = "0";
+                  }
+                  noirv2_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://openreview.net/forum?id=V3fCUY88Nb">
+                  <span class="papertitle">NOIR 2.0: Neural Signal Operated Intelligent Robots for Everyday Activities</span>
+                </a>
+                <br>Tasha Kim, Yingke Wang, <strong>Hanvit Cho</strong>, Alex Hodges
+                <br>
+                <em>CoRL 2024 Workshop CoroboLearn</em>
+                <br>
+                <a href="data/noirv2_slides.pdf">Slides</a>
+                <p></p>
+                <p>
+                  The development of an enhanced brain-robot interface (NOIR 2.0) utilizing non-invasive EEG signals to control robots for everyday tasks. The system improves human-robot collaboration by integrating faster brain decoding algorithms, few-shot learning, and one-shot skill parameter prediction, reducing task completion time and human involvement.
+                </p>
+              </td>
+            </tr>
+
+
 
     <tr onmouseout="uav_stop()" onmouseover="uav_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
