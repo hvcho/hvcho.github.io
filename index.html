@@ -41,12 +41,64 @@
             </tr>
           </tbody></table>
 
-
 <!-------------------- Work Experience ----------------------->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+  <td style="padding:20px;padding-bottom:0px;width:100%;vertical-align:middle">
+    <h2><b>Work Expereince</b></h2>
+    
+  </td>
+</tr>
+</tbody></table>
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+<tr onmouseout="aloha_stop()" onmouseover="aloha_start()">
+<td style="padding:20px;width:25%;vertical-align:middle">
+<div class="one">
+<div class="two" id='aloha_image'><video  width=100% muted autoplay loop>
+<source src="image/aloha.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video></div>
+<img src='image/aloha.png' width=100%>
+</div>
+<script type="text/javascript">
+function aloha_start() {
+document.getElementById('aloha_image').style.opacity = "1";
+}
+
+function aloha_stop() {
+document.getElementById('aloha_image').style.opacity = "0";
+}
+aloha_stop()
+</script>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+<a href="https://www.centrilliontech.com/">
+<span class="papertitle">Centrillion Technology Inc.</span>
+</a>
+<br> Robotics Internship
+<br>
+<em>June 2024 ~ September 2024</em>
+<br>
+<a href="data/aloha_report.pdf">Report Presentation</a>
+<p></p>
+<p>
+- Applied Trossen Robotics' Mobile ALOHA system (Bimanual Mobile Manipulation) to automate complex manufacturing processes, utilizing imitation learning techniques to enable robots to accurately replicate human actions in dynamic environments.
+</p><p>
+- Conducted extensive experimentation with various policy algorithms (ACT, Diffusion), across diverse simulation and real-world environments, to optimize robotic performance and improve adaptability in different task scenarios.
+</p>
+</td>
+</tr>
+
+
+</tbody></table>
+
+<!-------------------- Relavant Projects ----------------------->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;padding-bottom:0px;width:100%;vertical-align:middle">
-                <h2><b>Work Expereince</b></h2>
+                <h2><b>Relavant Projects</b></h2>
                 
               </td>
             </tr>
@@ -54,44 +106,98 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="aloha_stop()" onmouseover="aloha_start()">
+    <tr onmouseout="locobot_stop()" onmouseover="locobot_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='aloha_image'><video  width=100% muted autoplay loop>
-          <source src="image/aloha.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='image/aloha.png' width=100%>
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+          <div class="two" id='locobot_video'>
+            <div style="width: 180px; height: 130px; overflow: hidden; position: relative;">
+              <video style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 210px;" muted autoplay loop>
+              <source src="image/locobot.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            </div>
+          </div>
+            <img src="image/locobot.png" height="100%" id="locobot_image">
+          </div>
         </div>
         <script type="text/javascript">
-          function aloha_start() {
-            document.getElementById('aloha_image').style.opacity = "1";
+          function locobot_start() {
+            document.getElementById('locobot_video').style.opacity = "1";
+            document.getElementById('locobot_image').style.opacity = "0";
           }
 
-          function aloha_stop() {
-            document.getElementById('aloha_image').style.opacity = "0";
+          function locobot_stop() {
+            document.getElementById('locobot_video').style.opacity = "0";
+            document.getElementById('locobot_image').style.opacity = "1";
           }
-          aloha_stop()
+          locobot_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://www.centrilliontech.com/">
-          <span class="papertitle">Centrillion Technology Inc.</span>
-        </a>
-        <br> Robotics Internship
+        <span class="papertitle">ME326: Collaboriative Robotics</span>
         <br>
-        <em>June 2024 ~ September 2024</em>
+        <em>January 2025 ~ March 2025</em>
         <br>
-        <a href="data/aloha_report.pdf">Report Presentation</a>
+        <a href="https://sites.google.com/view/me-326-collabrobotics-group3">Website</a>
+       | 
+        <a href="https://github.com/LouConreux/ME326_Project/tree/humble_robot">GitHub</a>
+       | 
+        <a href="data/ME326_report.pdf">Report</a>
         <p></p>
         <p>
-          - Applied Trossen Robotics' Mobile ALOHA system (Bimanual Mobile Manipulation) to automate complex manufacturing processes, utilizing imitation learning techniques to enable robots to accurately replicate human actions in dynamic environments.
+          - Developed an autonomous mobile manipulation system integrating computer vision, speech recognition, and motion planning to execute object retrieval tasks in dynamic environments.
         </p><p>
-          - Conducted extensive experimentation with various policy algorithms (ACT, Diffusion), across diverse simulation and real-world environments, to optimize robotic performance and improve adaptability in different task scenarios.
+          - Implemented speech-to-command processing and object detection using Google Cloud APIs, enabling the robot to understand user instructions and identify, locate, and grasp target objects.
+        </p><p>
+          - Led the manipulation system development, refining object coordinate extraction, enhancing grasping precision, and ensuring smooth task execution through integrated navigation and control.
         </p>
       </td>
     </tr>
 
+
+    <tr onmouseout="me210_stop()" onmouseover="me210_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='me210_video'>
+            <div style="width: 170px; height: 130px; overflow: hidden; position: relative;">
+              <video style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 210px;" muted autoplay loop>
+                <source src="image/me210.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <img src='image/me210.png' width=100% id="me210_image">
+        </div>
+        <script type="text/javascript">
+          function me210_start() {
+            document.getElementById('me210_video').style.opacity = "1";
+            document.getElementById('me210_image').style.opacity = "0";
+          }
+
+          function me210_stop() {
+            document.getElementById('me210_video').style.opacity = "0";
+            document.getElementById('me210_image').style.opacity = "1";
+          }
+          me210_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <span class="papertitle">ME210: Introduction to Mechatronics</span>
+        <br>
+        <em>January 2025 ~ March 2025</em>
+        <br>
+        <a href="https://me210mechncheese.weebly.com/">Website</a>
+        <p></p>
+        <p>
+          - Designed and built an autonomous kitchen robot using a Mecanum wheel drivetrain for omnidirectional movement, allowing precise navigation to gather ingredients, cook, and serve popcorn.  
+        </p><p>
+          - Engineered servo-driven mechanisms for ignitor activation, ingredient dispensing, and flag raising, integrating dual-Arduino control to synchronize movement and task execution.  
+        </p><p>
+          - Developed a finite state machine architecture, ensuring smooth autonomous task management and efficient environmental interactions.  
+        </p>
+      </td>
+    </tr>
 
 </tbody></table>
           
